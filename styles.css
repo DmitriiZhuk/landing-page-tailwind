@@ -833,6 +833,11 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pb-12{
   padding-bottom: 3rem;
 }
