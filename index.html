@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Эвент агенство, организующее мероприятия для школьников">
+    <meta name="keywords"
+        content="школьники, мероприятия, выставки, походы, праздники, эвенты, эвент агенство, эвент, мероприятия для школьников">
+    <title>Эвент Агентство</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" type="module" defer></script>
+
+</head>
+
+<body class="font-nunito">
+    <!-- НавБар -->
+    <nav class=" container mx-auto p-6 pt-10">
+
+        <div class="flex flex-col md:flex-row items-center justify-between">
+
+            <div class="pt-2">
+                <img src="img/eventagency_transp.png" alt="logo">
+            </div>
+            <div class="md:hidden cursor-pointer" id="burger">
+                <span class="material-symbols-outlined pt-3">
+                    apps
+                </span>
+            </div>
+
+            <div class="hidden  text-center md:flex space-x-6" id="menu">
+                <a href="#features">Мероприятия</a>
+                <a href="#blog">Блог</a>
+                <a href="#testimonials">Отзывы</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Контент -->
+    <section id="hero" class="lg:mb-20">
+        <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-20">
+
+            <!-- Левая колонка -->
+            <div class="flex flex-col space-y-12 md:w-2/3 lg:w-1/2">
+
+                <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">Собрать всех друзей вместе,
+                    чтобы узнать что-то новое
+                </h1>
+
+                <p class="max-w-sm text-gray-600 text-center md:text-xl md:text-left">
+                    Мы создаем незабываемые моменты развлечений и обучения, организуя яркие школьные мероприятия,
+                    творческие игротеки, захватывающие поездки и театральные представления.
+                </p>
+
+            </div>
+
+            <!-- Правая колонка -->
+            <div class="md:w-1/2">
+                <img src="img/tretyak.webp" alt="intro" class="rounded-xl mx-auto ">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Мероприятия -->
+    <section id="features" class="scrollhidden bg-slate-100 my-4">
+
+        <h2 class="text-4xl font-bold text-center pt-6">~ Мероприятия ~</h2>
+
+        <div class="container flex flex-col mx-auto">
+
+            <div class="flex flex-col md:flex-row md:my-10 md:gap-6">
+                <div class="md:w-1/3 lg:w-1/2">
+                    <h3 class="text-3xl font-bold text-center my-4">Музей космонавтики</h3>
+
+                    <p class="py-2">Погрузитесь в бескрайние просторы космоса вместе с нашей увлекательной экскурсией в
+                        Музей
+                        Космонавтики! Соприкоснитесь с историей звездных полетов, научитесь тайнам космических кораблей
+                        и
+                        ощутите атмосферу покорения космоса. Опытные гиды поделятся уникальными фактами о первых
+                        космонавтах, космических программ и будущих миссиях. </p>
+                    <p class="py-2">Разгадайте тайны вселенной, наслаждаясь
+                        интерактивными экспонатами и захватывающими визуальными материалами. Эта экскурсия не только
+                        привнесет знания, но и вдохновит на бескрайние возможности вне Земли!
+                    </p>
+                    <div class="flex justify-center m-6">
+                        <a href="#"
+                            class=" p-3 px-6 pt-2 text-blue-600 bg-gray-100 rounded-full  hover:bg-gray-200">Подробнее...</a>
+                    </div>
+                </div>
+
+                <div class="mx-auto mb-6">
+                    <img src="img/cyp.webp"
+                        class="rounded-xl brightness-50 hover:brightness-100 transition ease-out duration-300"
+                        alt="Музей космонавтики">
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row-reverse md:my-10 mx-auto md:gap-6">
+                <div class="md:w-1/3 lg:w-1/2">
+                    <h3 class="text-3xl font-bold text-center my-4">В гостях у сказки</h3>
+                    <p class="py-2">
+                        Добро пожаловать на волшебное мероприятие "В гостях у сказки"! Откройте двери в удивительный мир
+                        волшебства, где каждый момент наполнен весельем и волшебством.
+                    </p>
+                    <p class="py-2">
+                        Наши гости отправятся в незабываемое приключение, где встретят любимых сказочных героев,
+                        погрузятся в захватывающие
+                        истории и будут участвовать в захватывающих играх и мастер-классах.
+                    </p>
+                    <p class="py-2">
+                        "В гостях у сказки" - это
+                        мероприятие, где дети и взрослые встречаются с волшебством, создают воспоминания и переносятся в
+                        удивительный мир сказочных приключений!
+                    </p>
+                    <div class="flex justify-center m-6">
+                        <a href="#"
+                            class=" p-3 px-6 pt-2 text-blue-600 bg-gray-100 rounded-full  hover:bg-gray-200">Подробнее...</a>
+                    </div>
+                </div>
+
+                <div class="mx-auto mb-6">
+                    <img src="img/tales.webp"
+                        class="rounded-xl brightness-50 hover:brightness-100 transition ease-out duration-300"
+                        alt="Сказки">
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row md:my-10 mx-auto md:gap-6">
+                <div class="md:w-1/3 lg:w-1/2">
+                    <h3 class="text-3xl font-bold text-center my-4">Экскурсии выходного дня</h3>
+                    <p class="py-2">Проведите незабываемые выходные, окунувшись в захватывающие и познавательные
+                        экскурсии выходного дня! Наши мероприятия предлагают уникальную возможность уйти от повседневной
+                        суеты и насладиться яркими впечатлениями в компании интересных гидов. </p>
+                    <p class="py-2">От исторических достопримечательностей и культурных мест до приключений в природе и
+                        гастрономических открытий — мы создаем маршруты для каждого вкуса.
+                    </p>
+                    <p class="py-2">Присоединяйтесь к нам и давайте вместе открывать новые горизонты в уютной атмосфере
+                        и веселой компании! Экскурсии выходного дня — это путешествие, которое оставит в вас невероятные
+                        воспоминания.
+                    </p>
+                    <div class="flex justify-center m-6">
+                        <a href="#"
+                            class=" p-3 px-6 pt-2 text-blue-600 bg-gray-100 rounded-full  hover:bg-gray-200">Подробнее...</a>
+                    </div>
+                </div>
+
+                <div class="mx-auto mb-6">
+                    <img src="img/weekend.webp"
+                        class="rounded-xl brightness-50 hover:brightness-100 transition ease-out duration-300"
+                        alt="Выходные">
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="bg-slate-100 py-2">
+            <div class="flex justify-center m-6">
+                <a href="#"
+                    class="uppercase p-3 px-6 pt-2 text-white bg-blue-400 rounded-full baseline hover:bg-blue-600 hover:scale-125 duration-300">Больше
+                    мероприятий</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блог -->
+    <section id="blog" class="scrollhidden my-2">
+        <h2 class="text-4xl font-bold text-center pt-6">~ Блог ~</h2>
+        <div class="container flex flex-col mx-auto">
+
+            <div class="flex md:flex-row flex-col lg:gap-10 mt-10">
+
+                <div><img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Ivan"
+                        class="rounded-full grayscale hidden lg:block">
+                </div>
+
+                <div class="space-y-4">
+                    <h3 class="text-3xl font-bold">03.01.2024 - Поход в Царицыно</h3>
+                    <p class="">Каждый из нас понимает очевидную вещь: укрепление и развитие внутренней структуры
+                        играет определяющее значение для приоретизации разума над эмоциями. </p>
+                    <p class="">Кстати, элементы политического процесса набирают популярность среди определенных
+                        слоев населения, а значит, должны быть функционально разнесены на независимые элементы.
+                    </p>
+                    <p class="">Кстати, элементы политического процесса набирают популярность среди определенных
+                        слоев населения, а значит, должны быть функционально разнесены на независимые элементы.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="flex md:flex-row flex-col lg:gap-10 mt-10">
+
+                <div><img src="https://randomuser.me/api/portraits/women/93.jpg" alt="Maria"
+                        class="rounded-full grayscale hidden lg:block">
+                </div>
+
+                <div class="space-y-4">
+                    <h3 class="text-3xl font-bold">02.01.2024 - Как мы смотрели "По щучьему велению"</h3>
+                    <p class="">Каждый из нас понимает очевидную вещь: укрепление и развитие внутренней структуры
+                        играет определяющее значение для приоретизации разума над эмоциями. </p>
+                    <p class="">Кстати, элементы политического процесса набирают популярность среди определенных
+                        слоев населения, а значит, должны быть функционально разнесены на независимые элементы.
+                    </p>
+                    <p class="">Кстати, элементы политического процесса набирают популярность среди определенных
+                        слоев населения, а значит, должны быть функционально разнесены на независимые элементы.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="flex md:flex-row flex-col lg:gap-10 mt-10">
+
+                <div><img src="https://randomuser.me/api/portraits/women/82.jpg" alt="Ann"
+                        class="rounded-full grayscale hidden lg:block">
+                </div>
+
+                <div class="space-y-4">
+                    <h3 class="text-3xl font-bold">01.01.2024 - Читаем Хармса</h3>
+                    <p class="">Каждый из нас понимает очевидную вещь: укрепление и развитие внутренней структуры
+                        играет определяющее значение для приоретизации разума над эмоциями. </p>
+                    <p class="">Кстати, элементы политического процесса набирают популярность среди определенных
+                        слоев населения, а значит, должны быть функционально разнесены на независимые элементы.
+                    </p>
+                    <p class="">Кстати, элементы политического процесса набирают популярность среди определенных
+                        слоев населения, а значит, должны быть функционально разнесены на независимые элементы.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="py-2">
+            <div class="flex justify-center m-6">
+                <a href="#"
+                    class="uppercase p-3 px-6 pt-2 text-white bg-blue-400 rounded-full baseline hover:bg-blue-600 hover:scale-125 duration-300">Больше
+                    статей</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="scrollhidden bg-slate-100 my-2">
+
+        <div class="max-w-6xl mx-auto px-5 text-center pt-6 pb-12">
+
+            <h2 class="text-4xl font-bold text-center">~ Отзывы ~</h2>
+
+            <div class="flex flex-col md:mt-24 md:flex-row md:space-x-6 ">
+
+                <!-- отзыв 1 -->
+                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3 swiper-slide">
+                    <img src="https://randomuser.me/api/portraits/men/81.jpg" class=" rounded-full w-16 md:-mt-14"
+                        alt="anisha">
+                    <h5 class="text-lg font-bold">Петр Иванов</h5>
+                    <p class="text-sm text-darkGrayishBlue"> В рамках спецификации современных стандартов,
+                        стремящиеся
+                        вытеснить традиционное производство,
+                        нанотехнологии, вне зависимости от их уровня, должны быть обнародованы!</p>
+                    <p class="text-sm text-darkGrayishBlue">В рамках спецификации современных стандартов,
+                        стремящиеся
+                        вытеснить традиционное производство,
+                        нанотехнологии, вне зависимости от их уровня, должны быть обнародованы!</p>
+                </div>
+
+                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3 swiper-slide">
+                    <img src="https://randomuser.me/api/portraits/men/93.jpg" class="rounded-full w-16 md:-mt-14"
+                        alt="richard">
+                    <h5 class="text-lg font-bold">Дмитрий Сергеевич</h5>
+                    <p class="text-sm text-darkGrayishBlue">В рамках спецификации современных стандартов,
+                        стремящиеся
+                        вытеснить традиционное производство,
+                        нанотехнологии, вне зависимости от их уровня, должны быть обнародованы!</p>
+                    <p class="text-sm text-darkGrayishBlue">В рамках спецификации современных стандартов,
+                        стремящиеся
+                        вытеснить традиционное производство,
+                        нанотехнологии, вне зависимости от их уровня, должны быть обнародованы!</p>
+
+                </div>
+
+
+                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
+                    <img src="https://randomuser.me/api/portraits/women/40.jpg" class="rounded-full w-16 md:-mt-14"
+                        alt="avatar-shanai">
+                    <h5 class="text-lg font-bold">Елена Степанова</h5>
+                    <p class="text-sm text-darkGrayishBlue">В рамках спецификации современных стандартов,
+                        стремящиеся
+                        вытеснить традиционное производство,
+                        нанотехнологии, вне зависимости от их уровня, должны быть обнародованы!</p>
+                    <p class="text-sm text-darkGrayishBlue">В рамках спецификации современных стандартов,
+                        стремящиеся
+                        вытеснить традиционное производство,
+                        нанотехнологии, вне зависимости от их уровня, должны быть обнародованы!</p>
+
+                </div>
+
+                <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3">
+                    <img src="https://randomuser.me/api/portraits/women/63.jpg" class="rounded-full w-16 md:-mt-14"
+                        alt="avatar-shanai">
+                    <h5 class="text-lg font-bold">Анна</h5>
+                    <p class="text-sm text-darkGrayishBlue">В рамках спецификации современных стандартов,
+                        стремящиеся
+                        вытеснить традиционное производство,
+                        нанотехнологии, вне зависимости от их уровня, должны быть обнародованы!</p>
+                    <p class="text-sm text-darkGrayishBlue">В рамках спецификации современных стандартов,
+                        стремящиеся
+                        вытеснить традиционное производство,
+                        нанотехнологии, вне зависимости от их уровня, должны быть обнародованы!</p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contacts" class="scrollhidden">
+
+        <h2 class="text-4xl font-bold text-center pt-6">~ Контакты ~</h2>
+
+        <div class="container flex flex-col mx-auto space-y-4 my-6">
+            <div class="text-center">
+                <p>Для связи с нами, заполните, пожалуйста, форму:</p>
+            </div>
+
+            <input type="text"
+                class="px-4 h-10 rounded-lg mx-auto w-full md:w-3/5  border-2 border-blue-400 focus:outline-none"
+                placeholder="Ваше имя">
+            <textarea name="" id="" cols="30" rows="10"
+                class="px-4 rounded-lg mx-auto w-full md:w-3/5 border-2 border-blue-400 focus:outline-none"
+                placeholder="Ваше сообщение"></textarea>
+
+            <div class="flex justify-center m-6">
+                <a href="#"
+                    class="uppercase p-3 px-6 pt-2 text-white bg-blue-400 rounded-full baseline hover:bg-blue-600 hover:scale-125 duration-300">Отправить</a>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="bg-gray-800">
+
+        <div
+            class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+
+            <div
+                class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+                <div class="mx-auto my-6 text-center text-white md:hidden">
+                    Copyright &copy; DZ 2024</div>
+                <div class="flex justify-center space-x-4">
+
+                    <a href="#">
+                        <img src="img/icon-facebook.svg" alt="icon-facebook" class="h-8" />
+                    </a>
+
+                    <a href="#">
+                        <img src="img/icon-youtube.svg" alt="icon-youtube" class="h-8" />
+                    </a>
+
+                    <a href="#">
+                        <img src="img/icon-twitter.svg" alt="icon-twitter" class="h-8" />
+                    </a>
+
+                    <a href="#">
+                        <img src="img/icon-pinterest.svg" alt="icon-pinterest" class="h-8" />
+                    </a>
+
+                    <a href="#">
+                        <img src="img/icon-instagram.svg" alt="icon-instagram" class="h-8" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex justify-around space-x-32">
+                <div class="flex flex-col space-y-3 text-white">
+                    <a href="#" class="hover:text-blue-200">Мероприятия</a>
+                    <a href="#" class="hover:text-blue-200">Блог</a>
+                    <a href="#" class="hover:text-blue-200">Отзывы</a>
+                </div>
+            </div>
+
+            <!-- Input  -->
+            <div class="flex flex-col justify-between">
+                <form>
+                    <div class="flex space-x-3">
+                        <input type="text" class="flex-1 px-4 rounded-full focus:outline-none"
+                            placeholder="Подписка на новости" />
+                        <button
+                            class="uppercase px-6 py-2 text-white rounded-full bg-blue-400 hover:bg-blue-600 focus:outline-none transition ease-out duration-300">
+                            Вперед
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
